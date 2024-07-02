@@ -1,0 +1,7 @@
+# 배열 만들기3
+class Solution {
+    fun solution(arr: IntArray, intervals: Array<IntArray>): IntArray {
+        var answer: IntArray = intArrayOf()
+        return answer
+    }
+}
