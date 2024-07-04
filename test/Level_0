@@ -1,7 +1,21 @@
 # 배열 만들기3
+import java.util.ArrayList;
+
 class Solution {
-    fun solution(arr: IntArray, intervals: Array<IntArray>): IntArray {
-        var answer: IntArray = intArrayOf()
-        return answer
+    public int[] solution(int[] arr, int[][] intervals) {
+        ArrayList<Integer> list = new ArrayList<>();
+
+        for(int i = 0; i < intervals.length; i++) {
+            for(int j = intervals[i][0]; j <= intervals[i][1]; j++) {
+                list.add(arr[j]);
+            }
+        }
+
+        int[] answer = new int[list.size()];
+        for(int i = 0; i < list.size(); i++) {
+            answer[i] = list.get(i);
+        }
+
+        return answer;
     }
 }
